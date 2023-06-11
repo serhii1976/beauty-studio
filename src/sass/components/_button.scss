@@ -1,0 +1,12 @@
+.button {
+  display: block;
+  margin: 0 auto;
+  background: $defaultButton;
+  border: none;
+
+  &:hover,
+  &:focus {
+    background: $hoverButton;
+    cursor: pointer;
+  }
+}

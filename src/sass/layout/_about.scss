@@ -1,0 +1,31 @@
+.about__container {
+  padding: 50px 0 0 0;
+}
+
+.about__title {
+  margin-bottom: 30px;
+  text-align: center;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 1.33;
+  letter-spacing: 0.1em;
+}
+
+.about__text {
+  margin-top: 20px;
+  font-family: 'Source Serif 4';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 1.35;
+}
+
+.about__accent {
+  font-family: 'Source Serif 4';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 1.35;
+
+  color: $highlightedTextColor;
+}

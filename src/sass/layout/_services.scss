@@ -1,0 +1,51 @@
+.services__container {
+  padding: 50px 45px;
+}
+
+.services__title {
+  text-align: center;
+
+  font-style: normal;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 1.33;
+  letter-spacing: 0.1em;
+}
+
+.services__list {
+}
+
+.services__item {
+  margin-top: 30px;
+}
+
+.services__cards {
+  position: relative;
+}
+
+.services__images {
+}
+
+.services__link {
+  position: absolute;
+  bottom: 40px;
+  right: 0;
+  background-color: #f8a3b2;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 220px;
+  height: 48px;
+
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.35;
+  letter-spacing: 0.1em;
+  color: #222222;
+  &:hover,
+  &:focus {
+    background: $hoverButton;
+  }
+}

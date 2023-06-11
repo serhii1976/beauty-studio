@@ -1,0 +1,75 @@
+.hero__container {
+  padding: 135px 40px 110px 40px;
+
+  background-image: radial-gradient(
+      50% 50% at 50% 50%,
+      rgba(255, 255, 255, 0.65) 0%,
+      rgba(217, 217, 217, 0) 100%
+    ),
+    url('../images/image/hero-mobile.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+@media (min-device-pixel-ratio: 2),
+  (-webkit-min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .hero__container {
+    background-image: url('../images/image/hero-mobile-2x.jpg');
+  }
+}
+
+.hero__title {
+  text-align: center;
+
+  font-style: normal;
+  font-weight: 700;
+  font-size: 96px;
+  line-height: 1;
+  letter-spacing: 0.05em;
+  color: #222222;
+}
+
+.hero__subtitle {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 1;
+  text-align: center;
+}
+
+.hero__text {
+  margin-top: 10px;
+  margin-bottom: 20px;
+  text-align: center;
+  font-family: 'Source Serif 4';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1;
+  font-variant: all-small-caps;
+
+  color: #222222;
+  font-variation-settings: 'opsz' 8;
+}
+.hero__text-accent {
+  font-family: 'Source Serif 4';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  font-variant: all-small-caps;
+  color: $highlightedTextColor;
+  font-variation-settings: 'opsz' 8;
+}
+
+.hero__button {
+  padding: 16px 30px;
+  border-radius: 30px;
+  font-family: 'Source Serif 4';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 1.05;
+  letter-spacing: 0.05em;
+}

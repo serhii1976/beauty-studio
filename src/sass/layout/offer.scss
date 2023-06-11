@@ -1,0 +1,61 @@
+.offer__container {
+  background-image: linear-gradient(
+      to right,
+      rgba(255, 255, 255, 0.3) 0%,
+      rgba(255, 255, 255, 0.3) 100%
+    ),
+    url('../images/image/offer-mobile.jpg');
+  transform: matrix(1, 0, 0, 1, 0, 0);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+@media (min-device-pixel-ratio: 2),
+  (-webkit-min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .offer {
+    background-image: url('../images/image/offer-mobile-2x.jpg');
+  }
+}
+
+.offer__container {
+  padding: 36px 20px;
+}
+
+.offer__text {
+  font-family: 'Source Serif 4';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1;
+  font-variant: all-small-caps;
+
+  color: #222222;
+  font-variation-settings: 'opsz' 8;
+}
+
+.offer__accent {
+  font-family: 'Source Serif 4';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  font-variant: all-small-caps;
+  color: $highlightedTextColor;
+  font-variation-settings: 'opsz' 8;
+}
+
+.offer__button {
+  margin-top: 15px;
+  padding: 16px 30px;
+  border-radius: 30px;
+  font-family: 'Source Serif 4';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 1.05;
+  letter-spacing: 0.05em;
+
+  color: #222222;
+}
