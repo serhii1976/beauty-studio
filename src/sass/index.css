@@ -1,6 +1,6 @@
 @import '~node_modules/modern-normalize/modern-normalize.css';
 body {
-  font-family: "Playfair Display" sans-serif;
+  font-family: "Playfair Display", serif;
   background-color: #ffffff;
   color: #222222;
 }
@@ -37,7 +37,14 @@ svg {
 }
 
 .button {
+  display: block;
+  margin: 0 auto;
   background: #f8a3b2;
+  border: none;
+}
+.button:hover, .button:focus {
+  background: #d38c9d;
+  cursor: pointer;
 }
 
 .container {
@@ -63,7 +70,17 @@ svg {
 }
 
 .header {
-  background-color: rgba(248, 163, 178, 0.5);
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: rgba(255, 255, 255, 0.7);
+}
+
+.header__container {
+  padding-top: 3px;
+  padding-bottom: 3px;
+  background: rgba(248, 163, 178, 0.5);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -100,4 +117,246 @@ svg {
 
 .burger_menu {
   margin-left: 25px;
+}
+
+.hero__container {
+  padding: 135px 40px 110px 40px;
+  background-image: radial-gradient(50% 50% at 50% 50%, rgba(255, 255, 255, 0.65) 0%, rgba(217, 217, 217, 0) 100%), url("../images/image/hero-mobile.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .hero__container {
+    background-image: url("../images/image/hero-mobile-2x.jpg");
+  }
+}
+.hero__title {
+  text-align: center;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 96px;
+  line-height: 1;
+  letter-spacing: 0.05em;
+  color: #222222;
+}
+
+.hero__subtitle {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 1;
+  text-align: center;
+}
+
+.hero__text {
+  margin-top: 10px;
+  margin-bottom: 20px;
+  text-align: center;
+  font-family: "Source Serif 4";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1;
+  font-variant: all-small-caps;
+  color: #222222;
+  font-variation-settings: "opsz" 8;
+}
+
+.hero__text-accent {
+  font-family: "Source Serif 4";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  font-variant: all-small-caps;
+  color: #f8a3b2;
+  font-variation-settings: "opsz" 8;
+}
+
+.hero__button {
+  padding: 16px 30px;
+  border-radius: 30px;
+  font-family: "Source Serif 4";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 1.05;
+  letter-spacing: 0.05em;
+}
+
+.about__container {
+  padding: 50px 0 0 0;
+}
+
+.about__title {
+  margin-bottom: 30px;
+  text-align: center;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 1.33;
+  letter-spacing: 0.1em;
+}
+
+.about__text {
+  margin-top: 20px;
+  font-family: "Source Serif 4";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 1.35;
+}
+
+.about__accent {
+  font-family: "Source Serif 4";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 1.35;
+  color: #f8a3b2;
+}
+
+.advantages__container {
+  padding-top: 50px;
+}
+
+.advantages__title {
+  text-align: center;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 1.33;
+  letter-spacing: 0.1em;
+}
+
+.advantages__list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.advantages__item {
+  margin-top: 30px;
+  max-width: 200px;
+}
+
+.advantages__iconThumb {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: #f8a3b2;
+  margin: 0 auto;
+  position: relative;
+}
+
+.advantages__icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  fill: #ffffff;
+}
+
+.advantages__text {
+  margin-top: 20px;
+  font-family: "Source Serif 4";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 1.35;
+  text-align: center;
+  letter-spacing: 0.05em;
+}
+
+.services__container {
+  padding: 50px 45px;
+}
+
+.services__title {
+  text-align: center;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 1.33;
+  letter-spacing: 0.1em;
+}
+
+.services__item {
+  margin-top: 30px;
+}
+
+.services__cards {
+  position: relative;
+}
+
+.services__link {
+  position: absolute;
+  bottom: 40px;
+  right: 0;
+  background-color: #f8a3b2;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 220px;
+  height: 48px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.35;
+  letter-spacing: 0.1em;
+  color: #222222;
+}
+.services__link:hover, .services__link:focus {
+  background: #d38c9d;
+}
+
+.offer__container {
+  background-image: linear-gradient(to right, rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, 0.3) 100%), url("../images/image/offer-mobile.jpg");
+  transform: matrix(1, 0, 0, 1, 0, 0);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .offer {
+    background-image: url("../images/image/offer-mobile-2x.jpg");
+  }
+}
+.offer__container {
+  padding: 36px 20px;
+}
+
+.offer__text {
+  font-family: "Source Serif 4";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1;
+  font-variant: all-small-caps;
+  color: #222222;
+  font-variation-settings: "opsz" 8;
+}
+
+.offer__accent {
+  font-family: "Source Serif 4";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  font-variant: all-small-caps;
+  color: #f8a3b2;
+  font-variation-settings: "opsz" 8;
+}
+
+.offer__button {
+  margin-top: 15px;
+  padding: 16px 30px;
+  border-radius: 30px;
+  font-family: "Source Serif 4";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 1.05;
+  letter-spacing: 0.05em;
+  color: #222222;
 }/*# sourceMappingURL=index.css.map */
