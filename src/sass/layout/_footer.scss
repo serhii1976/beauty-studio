@@ -26,10 +26,14 @@
 }
 
 .footerContacts__list {
-  padding: 16px 15px 16px 10px;
+  padding: 10px 5px;
   position: absolute;
   bottom: 0;
   left: 40%;
+
+  @include mobile {
+    padding: 16px 15px 16px 10px;
+  }
 
   background: #f8a3b2;
 }
@@ -49,9 +53,13 @@
   font-family: 'Inter';
   font-style: normal;
   font-weight: 400;
-  font-size: 12px;
+  font-size: 8px;
   line-height: 1.25;
   color: #222222;
+
+  @include mobile {
+    font-size: 12px;
+  }
 }
 
 .footer__map {
@@ -62,9 +70,13 @@
 
   font-style: normal;
   font-weight: 400;
-  font-size: 13px;
+  font-size: 10px;
   line-height: 1.31;
   letter-spacing: 0.05em;
+
+  @include mobile {
+    font-size: 13px;
+  }
 }
 
 .footerNav {
@@ -78,11 +90,13 @@
 
 .footerNav__item {
 }
-
 .footerNav__link {
   font-style: normal;
   font-weight: 500;
-  font-size: 12px;
+  font-size: 8px;
   line-height: 1.33;
   color: #222222;
+  @include mobile {
+    font-size: 12px;
+  }
 }

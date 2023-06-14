@@ -45,6 +45,26 @@
   display: flex;
 }
 
-.burger_menu {
+.header_link {
+  &:hover,
+  &:focus {
+    .phone_black {
+      transform: scale(1.15);
+    }
+  }
+}
+
+.header__burger {
+  padding: 0;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+
   margin-left: 25px;
+  &:hover,
+  &:focus {
+    .burger_menu {
+      transform: scale(1.15);
+    }
+  }
 }
