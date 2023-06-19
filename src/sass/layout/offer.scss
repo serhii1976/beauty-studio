@@ -1,4 +1,4 @@
-.offer__container {
+.offer {
   background-image: linear-gradient(
       to right,
       rgba(255, 255, 255, 0.3) 0%,
@@ -17,6 +17,9 @@
   (min-resolution: 2dppx) {
   .offer {
     background-image: url('../images/image/offer-mobile-2x.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
   }
 }
 
